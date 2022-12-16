@@ -25,3 +25,31 @@ Algoritmo Sales
 	
 FinAlgoritmo
 
+
+## EVEN OR ODD
+
+Algoritmo EvenOdd
+
+	Repetir
+		Escribir "Ingrese un numero entre 1 y 50"
+		Leer num
+		Si num >= 1 & num <= 50 Entonces
+			Si num % 2 = 0 Entonces
+				par = 0
+				Para i=0 Hasta num Con Paso (par + 2) Hacer
+					Escribir ConvertirATexto(i)
+				Fin Para
+			SiNo
+				impar = 1
+				Para i=1 Hasta num Con Paso (impar + 2) Hacer
+					Escribir ConvertirATexto(i)
+				Fin Para
+			Fin Si
+		SiNo
+			Escribir "Numero invalido"
+		Fin Si
+	Mientras Que num < 1 | num > 50
+	
+FinAlgoritmo
+
+
