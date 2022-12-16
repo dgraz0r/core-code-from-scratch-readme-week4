@@ -100,3 +100,36 @@ Algoritmo distanceToZero
 	
 FinAlgoritmo
 
+## TOSS COIN
+
+Algoritmo TossCoin
+
+	Escribir "Ingrese el nombre del primer jugador"
+	Leer player1
+	Escribir "Ingrese la cantidad a apostar"
+	Leer cant1
+	Escribir "Ingrese el nombre del segundo jugador"
+	Leer player2
+	Escribir "Ingrese la cantidad a apostar"
+	Leer cant2
+	Si cant1<= 0 | cant2 <= 0 Entonces
+		Si cant1 <= 0 & cant2 <= 0 Entonces
+			Imprimir "Juego Cancelado"
+		SiNo
+			Si cant1<=0 Entonces
+				Imprimir "¡Jugador ", Mayusculas(player2), " gana!", "  Cantidad ganada 0"
+			SiNo
+				Imprimir "¡Jugador ", Mayusculas(player1), " gana!", "  Cantidad ganada 0"
+			Fin Si
+		Fin Si
+	SiNo
+		Si Aleatorio(1,2) = 1 Entonces
+			Imprimir "¡Jugador ", Mayusculas(player1), " gana!", " Cantidad ganada ", cant2
+		SiNo
+			Imprimir "¡Jugador ", Mayusculas(player2), " gana!", " Cantidad ganada ", cant1
+		Fin Si
+		
+	Fin Si
+	
+FinAlgoritmo
+
