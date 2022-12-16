@@ -83,3 +83,20 @@ Algoritmo Dado
 	
 FinAlgoritmo
 
+## DistanceToZero
+
+Algoritmo distanceToZero
+
+	Escribir "Ingrese un numero"
+	leer num
+	Para i=1 Hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese un numero"
+		leer numero
+		Si Abs(numero) > Abs(num) Entonces
+			num = numero
+		FinSi
+	Fin Para
+	Imprimir trunc(num)
+	
+FinAlgoritmo
+
