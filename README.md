@@ -53,3 +53,18 @@ Algoritmo EvenOdd
 FinAlgoritmo
 
 
+## FULL NAME
+
+Algoritmo nombre
+
+	Escribir "Ingrese su primer nombre"
+	Leer nom
+	Escribir "Ingrese su apellido"
+	leer ape
+	name = Mayusculas(Subcadena(nom,0,0)) + Minusculas(Subcadena(nom,1,Longitud(nom)-1))
+	apellido = Mayusculas(Subcadena(ape,0,0)) + Minusculas(Subcadena(ape,1,Longitud(ape)-1))
+	Escribir name, " " , apellido
+	
+FinAlgoritmo
+
+
